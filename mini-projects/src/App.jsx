@@ -1,13 +1,10 @@
-
-import AppTours from '../2-Tours/AppTours';
-
+import AppReviews from '../3-Reviews/AppReviews'
 import './App.css'
 
 function App() {
-  
   return (
     <>
-     <AppTours />
+      <AppReviews />
     </>
   )
 }
