@@ -1,0 +1,17 @@
+import { Link } from 'react-router-dom'
+import './index.css'
+
+const Navbar = () => {
+  return (
+    <div className="navbar">
+      <div className="mainLink">
+        <Link to="/">Birthday Buddy</Link>
+        <Link to="/tours">Tours</Link>
+        <Link to="/reviews">Reviews</Link>
+        <Link to="/accordion">Accordion</Link>
+        <Link to="/menu">Menu</Link>
+      </div>
+    </div>
+  )
+}
+export default Navbar
