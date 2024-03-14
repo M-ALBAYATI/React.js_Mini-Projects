@@ -5,7 +5,6 @@ import './index.css'
 
 function AppBirthdayBuddy() {
   const [people, setPeople] = useState(data)
-  console.log(people)
   return (
     <main>
       <section className="container">

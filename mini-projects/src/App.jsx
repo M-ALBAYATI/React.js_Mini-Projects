@@ -1,10 +1,11 @@
-import AppReviews from '../3-Reviews/AppReviews'
+import AppQuestions from '../4-Accordion/AppQuestions'
 import './App.css'
+
 
 function App() {
   return (
     <>
-      <AppReviews />
+      <AppQuestions />
     </>
   )
 }
