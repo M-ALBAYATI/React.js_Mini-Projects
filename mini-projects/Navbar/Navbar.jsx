@@ -11,6 +11,7 @@ const Navbar = () => {
         <Link to="/accordion">Accordion</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/tabs">Tabs</Link>
+        <Link to="/slider">Slider</Link>
       </div>
     </div>
   )

@@ -5,6 +5,7 @@ import AppReviews from '../3-Reviews/AppReviews'
 import AppQuestions from '../4-Accordion/AppQuestions'
 import AppMenu from '../5-Menu/AppMenu'
 import AppTabs from '../6-Tabs/AppTabs'
+import AppSlider from '../7-Slider/AppSlider'
 import { Routes, Route } from 'react-router-dom'
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/accordion" element={<AppQuestions />} />
         <Route path="/menu" element={<AppMenu />} />
         <Route path="/tabs" element={<AppTabs />} />
+        <Route path="/slider" element={<AppSlider />} />
       </Routes>
     </>
   )
