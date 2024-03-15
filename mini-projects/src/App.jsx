@@ -4,7 +4,10 @@ import AppTours from '../2-Tours/AppTours'
 import AppReviews from '../3-Reviews/AppReviews'
 import AppQuestions from '../4-Accordion/AppQuestions'
 import AppMenu from '../5-Menu/AppMenu'
+import AppTabs from '../6-Tabs/AppTabs'
 import { Routes, Route } from 'react-router-dom'
+
+
 
 
 function App() {
@@ -16,7 +19,8 @@ function App() {
         <Route path="/tours" element={<AppTours />} />
         <Route path="/reviews" element={<AppReviews />} />
         <Route path="/accordion" element={<AppQuestions />} />
-        <Route path="/Menu" element={<AppMenu />} />
+        <Route path="/menu" element={<AppMenu />} />
+        <Route path="/tabs" element={<AppTabs />} />
       </Routes>
     </>
   )
