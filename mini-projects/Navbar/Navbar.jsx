@@ -12,7 +12,8 @@ const Navbar = () => {
         <Link to="/menu">Menu</Link>
         <Link to="/tabs">Tabs</Link>
         <Link to="/slider">Slider</Link>
-        <Link to="/lorem-ipsum">lorem ipsum</Link>
+        <Link to="/lorem-ipsum">Lorem Ipsum</Link>
+        <Link to="/color-generator">Color Generator</Link>
       </div>
     </div>
   )
