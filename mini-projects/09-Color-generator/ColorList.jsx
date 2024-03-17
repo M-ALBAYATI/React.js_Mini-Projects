@@ -1,12 +1,12 @@
-import SingleColor from "./SingleColor"
+import SingleColor from './SingleColor'
 import { nanoid } from 'nanoid'
 
-const ColorList = ({colors}) => {
+const ColorList = ({ colors }) => {
   return (
     <section className="colors">
-        {colors.map((color,index)=>{
-            return <SingleColor key={nanoid()} color={color} index={index} />
-        })}
+      {colors.map((color, index) => {
+        return <SingleColor key={nanoid()} color={color} index={index} />
+      })}
     </section>
   )
 }
