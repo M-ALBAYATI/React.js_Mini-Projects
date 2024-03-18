@@ -7,7 +7,8 @@
 // import AppSlider from '../07-Slider/AppSlider'
 // import AppLoremIpsum from '../08-Lorem-Ipsum/AppLoremIpsum'
 // import AppColorGenerator from '../09-Color-generator/AppColorGenerator'
-import AppGroceryBud from "../10-Grocery-bud/AppGroceryBud"
+// import AppGroceryBud from "../10-Grocery-bud/AppGroceryBud"
+import AppNavbar from "../11-Navbar/AppNavbar"
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
       {/* <AppSlider /> */}
       {/* <AppLoremIpsum /> */}
       {/* <AppColorGenerator /> */}
-      <AppGroceryBud />
+      {/* <AppGroceryBud /> */}
+      <AppNavbar />
     </>
   )
 }
