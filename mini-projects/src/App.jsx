@@ -8,8 +8,8 @@
 // import AppLoremIpsum from '../08-Lorem-Ipsum/AppLoremIpsum'
 // import AppColorGenerator from '../09-Color-generator/AppColorGenerator'
 // import AppGroceryBud from "../10-Grocery-bud/AppGroceryBud"
-import AppNavbar from "../11-Navbar/AppNavbar"
-
+// import AppNavbar from "../11-Navbar/AppNavbar"
+import AppSidebar from '../12-Sidebar/AppSidebar'
 
 function App() {
   return (
@@ -24,7 +24,8 @@ function App() {
       {/* <AppLoremIpsum /> */}
       {/* <AppColorGenerator /> */}
       {/* <AppGroceryBud /> */}
-      <AppNavbar />
+      {/* <AppNavbar /> */}
+      <AppSidebar />
     </>
   )
 }
