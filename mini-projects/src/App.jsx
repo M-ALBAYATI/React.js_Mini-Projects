@@ -9,7 +9,8 @@
 // import AppColorGenerator from '../09-Color-generator/AppColorGenerator'
 // import AppGroceryBud from "../10-Grocery-bud/AppGroceryBud"
 // import AppNavbar from "../11-Navbar/AppNavbar"
-import AppSidebar from '../12-Sidebar/AppSidebar'
+// import AppSidebar from '../12-Sidebar-Modal/AppSidebar'
+import AppStrapiSubmenus from '../13-Strapi-submenus/AppStrapiSubmenus'
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       {/* <AppColorGenerator /> */}
       {/* <AppGroceryBud /> */}
       {/* <AppNavbar /> */}
-      <AppSidebar />
+      {/* <AppSidebar /> */}
+      <AppStrapiSubmenus />
     </>
   )
 }
