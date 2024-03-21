@@ -10,7 +10,8 @@
 // import AppGroceryBud from "../10-Grocery-bud/AppGroceryBud"
 // import AppNavbar from "../11-Navbar/AppNavbar"
 // import AppSidebar from '../12-Sidebar-Modal/AppSidebar'
-import AppStrapiSubmenus from '../13-Strapi-submenus/AppStrapiSubmenus'
+// import AppStrapiSubmenus from '../13-Strapi-submenus/AppStrapiSubmenus'
+import AppCart from '../14-Cart/AppCart'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <AppGroceryBud /> */}
       {/* <AppNavbar /> */}
       {/* <AppSidebar /> */}
-      <AppStrapiSubmenus />
+      {/* <AppStrapiSubmenus /> */}
+      <AppCart />
     </>
   )
 }
