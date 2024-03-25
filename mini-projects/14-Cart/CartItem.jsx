@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa'
 import { useGlobalContext } from './Context'
 
