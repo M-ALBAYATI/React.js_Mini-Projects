@@ -308,6 +308,7 @@ ul {
 .next {
   position: absolute;
   top: 200px;
+  transform: translateY(-50%);
   background: var(--grey-500);
   color: var(--white);
   width: 1.25rem;

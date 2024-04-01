@@ -268,12 +268,14 @@ ul {
 .section-center {
   width: 90vw;
   margin: 0 auto;
-  max-width: var(--max-width);
+  max-width: 1170px;
   display: grid;
   gap: 2rem;
 }
 
 .menu-item {
+   display: grid;
+  gap: 1rem 2rem;
   background: var(--white);
   border-radius: var(--borderRadius);
 }

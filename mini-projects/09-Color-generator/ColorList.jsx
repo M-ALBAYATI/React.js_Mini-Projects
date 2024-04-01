@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import SingleColor from './SingleColor'
 import { nanoid } from 'nanoid'
 

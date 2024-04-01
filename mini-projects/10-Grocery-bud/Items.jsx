@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import SingleItem from './SingleItem'
 
 const Items = ({ items, removeItem, editItem }) => {

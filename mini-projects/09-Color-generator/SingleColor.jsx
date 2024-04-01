@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { toast } from 'react-toastify'
 
 const SingleColor = ({ index, color }) => {
@@ -9,10 +10,10 @@ const SingleColor = ({ index, color }) => {
         await navigator.clipboard.writeText(`#${hex}`)
         toast.success('Color copied to clipboard')
       } catch (error) {
-        toast.error('Faild to copy color to clipboard')
+        toast.error('Failed to copy color to clipboard')
       }
     } else {
-      toast.error('Clipboard access noy available')
+      toast.error('Clipboard access not available')
     }
   }
   return (
@@ -22,7 +23,7 @@ const SingleColor = ({ index, color }) => {
       onClick={saveToClipboard}
     >
       <p className="percent-value">{weight}%</p>
-      <p className="color-value">{hex}</p>
+      <p className="color-value">#{hex}</p>
     </article>
   )
 }

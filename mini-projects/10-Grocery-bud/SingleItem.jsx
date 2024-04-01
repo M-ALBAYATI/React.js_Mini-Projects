@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const SingleItem = ({ item, removeItem, editItem }) => {
   return (
     <div className="single-item">

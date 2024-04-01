@@ -11,7 +11,7 @@ const Carousel = () => {
 
   const prevSlide = () => {
     setCurrentPerson((oldPerson) => {
-      const result = (oldPerson - (1 % people.length)) % people.length
+      const result = (oldPerson - 1 + people.length) % people.length
       return result
     })
   }
@@ -26,7 +26,7 @@ const Carousel = () => {
   useEffect(() => {
     let sliderId = setInterval(() => {
       nextSlide()
-    }, 2000)
+    }, 5000)
     return () => {
       clearInterval(sliderId)
     }
