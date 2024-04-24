@@ -12,7 +12,8 @@
 // import AppSidebar from '../12-Sidebar-Modal/AppSidebar'
 // import AppStrapiSubmenus from '../13-Strapi-submenus/AppStrapiSubmenus'
 // import AppCart from '../14-Cart/AppCart'
-import AppUnsplashImages from "../15-Unsplash-Images/AppUnsplashImages.jsx"
+// import AppUnsplashImages from "../15-Unsplash-Images/AppUnsplashImages.jsx"
+import AppGeminiClone from '../16-Gemini-Clone/AppGeminiClone'
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <AppSidebar /> */}
       {/* <AppStrapiSubmenus /> */}
       {/* <AppCart /> */}
-      <AppUnsplashImages />
+      {/* <AppUnsplashImages /> */}
+      <AppGeminiClone />
     </>
   )
 }
