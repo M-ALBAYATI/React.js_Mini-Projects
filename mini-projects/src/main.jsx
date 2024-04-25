@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import ContextProvider from '../16-Gemini-Clone/context/Context.jsx'
 // import 'react-toastify/dist/ReactToastify.css'
 // import { AppProvider } from '../12-Sidebar-Modal/Context.jsx'
 // import { AppProvider } from '../13-Strapi-submenus/Context.jsx'
@@ -9,7 +10,11 @@ import App from './App.jsx'
 // const queryClient = new QueryClient()
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <ContextProvider>
+    <App />
+  </ContextProvider>
+)
 
 // <AppProvider>
 //   <QueryClientProvider client={queryClient}>
