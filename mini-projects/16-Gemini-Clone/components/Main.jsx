@@ -1,13 +1,12 @@
 import { useContext, useState } from 'react'
-import { assets } from '../../assets/assets'
-import { Context } from '../../context/Context'
+import { assets } from '../assets/assets'
+import { Context } from '../context/Context'
 
 const Main = () => {
   const {
+    input,
+    setInput,
     recentPrompt,
-    setRecentPrompt,
-    prevPrompts,
-    setPrevPrompts,
     showResult,
     setShowResult,
     loading,
@@ -16,15 +15,22 @@ const Main = () => {
     setResultData,
     onSent,
   } = useContext(Context)
-  const [input, setInput] = useState('')
 
-  const handleClick = () => {
+  const handleDivClick = (e) => {
+    if (e.target.tagName === 'P') {
+      const inputValue = e.target.innerText
+      handleClick(inputValue)
+    }
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    handleClick(input)
+  }
+  const handleClick = (text) => {
     setResultData('')
     setLoading(true)
     setShowResult(true)
-    setRecentPrompt(input)
-    setPrevPrompts(prev=>[...prev,input])
-    onSent(input)
+    onSent(text)
     setInput('')
   }
   return (
@@ -43,19 +49,19 @@ const Main = () => {
               <p>How can I help you today?</p>
             </div>
             <div className="cards">
-              <div className="card">
+              <div onClick={handleDivClick} className="card">
                 <p>Suggest beautiful places to see an upcoming road trip</p>
                 <img src={assets.compass_icon} alt="" />
               </div>
-              <div className="card">
+              <div onClick={handleDivClick} className="card">
                 <p>Briefly summarize this concept: urban planning</p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
-              <div className="card">
+              <div onClick={handleDivClick} className="card">
                 <p>Brainstorm team bonding activities for our work retreat</p>
                 <img src={assets.message_icon} alt="" />
               </div>
-              <div className="card">
+              <div onClick={handleDivClick} className="card">
                 <p>Improve the readability of the following code</p>
                 <img src={assets.code_icon} alt="" />
               </div>
@@ -84,16 +90,24 @@ const Main = () => {
 
         <div className="main-bottom">
           <div className="search-box">
-            <input
-              onChange={(e) => setInput(e.target.value)}
-              value={input}
-              type="text"
-              placeholder="Enter a prompt here"
-            />
+            <form onSubmit={handleSubmit}>
+              <input
+                onChange={(e) => setInput(e.target.value)}
+                value={input}
+                type="text"
+                placeholder="Enter a prompt here"
+              />
+            </form>
             <div>
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
-              <img onClick={handleClick} src={assets.send_icon} alt="" />
+              {input ? (
+                <img
+                  onClick={() => handleClick(input)}
+                  src={assets.send_icon}
+                  alt=""
+                />
+              ) : null}
             </div>
           </div>
           <p className="bottom-info">
