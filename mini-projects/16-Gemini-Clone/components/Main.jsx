@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { assets } from '../assets/assets'
 import { Context } from '../context/Context'
 
@@ -17,10 +17,8 @@ const Main = () => {
   } = useContext(Context)
 
   const handleDivClick = (e) => {
-    if (e.target.tagName === 'P') {
-      const inputValue = e.target.innerText
-      handleClick(inputValue)
-    }
+      const TextP = e.target.innerText
+      handleClick(TextP)
   }
   const handleSubmit = (e) => {
     e.preventDefault()

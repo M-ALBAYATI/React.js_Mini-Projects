@@ -7,7 +7,6 @@ const Sidebar = () => {
   const {
     onSent,
     prevPrompts,
-    setRecentPrompt,
     newChat,
     setResultData,
     setLoading,
